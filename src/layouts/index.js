@@ -3,7 +3,12 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/header'
+import Footer from '../components/footer-test'
+import Menu from '../components/menu'
 import './index.css'
+import '../style-components/footer.css'
+import '../style-components/header.css'
+import '../style-components/menu.css'
 
 const Layout = ({ children, data }) => (
   <div>
@@ -15,6 +20,7 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
+    <Menu />
     <div
       style={{
         margin: '0 auto',
@@ -25,6 +31,7 @@ const Layout = ({ children, data }) => (
     >
       {children()}
     </div>
+    <Footer />
   </div>
 )
 

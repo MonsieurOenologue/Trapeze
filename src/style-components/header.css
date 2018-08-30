@@ -1,0 +1,10 @@
+.flex-container {
+    display: flex;
+    text-align: center;
+    color: blue;
+  }
+
+.color-banner {
+    background: 'blue';
+    margin-bottom: '1.45rem';
+}
